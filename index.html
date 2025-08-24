@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="app-title"><i class="fas fa-cloud-sun"></i>Weather India</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for a city in India...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <div class="current-weather">
+                <div class="weather-card">
+                    <div class="weather-header">
+                        <h2 id="city-name">New Delhi</h2>
+                        <p id="date">Monday, June 12</p>
+                    </div>
+                    <div class="weather-body">
+                        <div class="weather-icon">
+                            <i class="fas fa-sun" id="weather-icon"></i>
+                        </div>
+                        <div class="temperature">
+                            <h1 id="temp">32°C</h1>
+                            <p id="weather-desc">Sunny</p>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <i class="fas fa-temperature-high"></i>
+                            <div>
+                                <p>Feels Like</p>
+                                <p id="feels-like">34°C</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-tint"></i>
+                            <div>
+                                <p>Humidity</p>
+                                <p id="humidity">45%</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-wind"></i>
+                            <div>
+                                <p>Wind Speed</p>
+                                <p id="wind-speed">12 km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-cards" id="forecast-container">
+                    <!-- Forecast cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
